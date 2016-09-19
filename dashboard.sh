@@ -4,7 +4,7 @@
 
 #Checks free memory usage with free command and gets 3rd column, 2 row to print
 freeMem(){
- free -h|awk '{print $3}'|awk 'NR==2{print $1}'
+ free -h|awk '{print $4}'|awk 'NR==2{print $1}'
 }
 
 #Function to print CPU load by getting 8th,9th,and 10th column of info
